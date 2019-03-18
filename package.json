@@ -127,7 +127,7 @@
           "pivotaly.branchDelimiter": {
             "type": "string",
             "title": "Branch delimiter",
-            "description": "Delimiter within branch to be used to obtain story id e.g in new-branch-2, delimiter is '-'",
+            "description": "Delimiter within branch to be used to obtain story id e.g in new-branch-2, delimiter is '-'. Also supports RegExp format, e.g. '[\/-]' for 'feature/123-new-branch'",
             "default": "-"
           }
         }

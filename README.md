@@ -27,11 +27,11 @@ Pivotaly enables you to keep your work in sync with pivotal tracker without havi
 
     Mark blockers as resolved or unresolved
 - Link stories
-    
+
     Assign a story to a git branch
 
 - Member cycle time
-    
+
     View cycle time per members per iteration
 
 
@@ -61,7 +61,7 @@ Pivotaly contributes the following settings:
 
 * `pivotaly.protectedBranches`: Array of git branches that are ideally not feature branches e.g. `master`. Pivotaly will not attempt to link a story to git branches added.
 
-* `pivotaly.branchDelimiter`: Delimiter to use to retrieve story ID. e.g. set to `'-'` to get id `345` from `ft-edit-read-me-345` or `'_'` to get `345` from `ft-edit-read-me_345`
+* `pivotaly.branchDelimiter`: Delimiter RegExp to use to retrieve story ID. e.g. set to `'-'` to get id `345` from `ft-edit-read-me-345` or `'_'` to get `345` from `ft-edit-read-me_345` or `[\/-]` to get `678` from `feature/678-read-me`
 
 ## Known Issues
 
@@ -88,7 +88,7 @@ Pivotaly may not track check-outs from bare repositories as expected.
 
 ## [0.4.0]
 #### Added
-- Intuitional flow 
+- Intuitional flow
     - Pick project id from a list of projects instead of manually inserting a project id
     - Link a story from a list of stories in the current iteration and backlog instead of manually inserting an id
 
@@ -138,7 +138,7 @@ Pivotaly may not track check-outs from bare repositories as expected.
 - Error message when not in a git repo
 
 #### Fixed
-- Doesn't register different project IDs when switching workspaces 
+- Doesn't register different project IDs when switching workspaces
 
 ## [0.0.1]
 - Initial release
